@@ -26,7 +26,7 @@ const studentsSchema = Schema(
     },
   },
   {
-    timestemps: true,
+    timestamps: true,
     versionKey: false,
   }
 );
