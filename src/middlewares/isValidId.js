@@ -3,7 +3,6 @@ import { isValidObjectId } from "mongoose";
 
 export const isValidId = (req, res, next) => {
   const { studentId } = req.params;
-  console.log(isValidObjectId(studentId));
 
   if (!isValidObjectId(studentId)) {
     throw createHttpError(400, "Bad request");
